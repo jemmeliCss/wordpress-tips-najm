@@ -1,15 +1,12 @@
 # wordpress-tips-najm
 
-1- get all post meta to special post type
---------------------------------------
+##1- get all post meta to special post type
 ```
   echo $meta = get_post_meta( 8000 );
   print_r($meta);
   ```
-------------------------------------
   
-2- select for special wp-query
---------------------------------------
+##2- select for special wp-query
 ```
 $args = array(
     'post_type' => 'pixad-autos',
@@ -25,4 +22,3 @@ $args = array(
 );
 $filtredOutOfStock = new WP_Query($args);
 ```
-------------------------------------
