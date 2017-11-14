@@ -23,7 +23,7 @@ $args = array(
 $filtredOutOfStock = new WP_Query($args);
 ```
 
-3-get all post type for post type
+### 3-get all post type for post type
 ```
 foreach ( get_post_types( '', 'names' ) as $post_type ) {
    echo '<p>' . $post_type . '</p>';
