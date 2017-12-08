@@ -30,3 +30,25 @@ foreach ( get_post_types( '', 'names' ) as $post_type ) {
 }
 ```
 
+### 4-select with special meta key
+```
+$args = array(
+    'meta_key' => '_auto_price',
+    'order'       => 'DESC',
+    'orderby' => '_auto_price',
+    'meta_query' => array(
+        'key' => '_auto_stock_status',
+        'value' => 'out of stock',
+        'compare' => '='
+    )
+
+);
+```
+
+
+
+
+
+
+
+
